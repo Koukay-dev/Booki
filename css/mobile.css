@@ -1,0 +1,166 @@
+*
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* HEADER=================================================================*/
+
+
+#Search{
+    padding-inline: 10px;
+}
+
+header{
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    margin-block:25px ;
+}
+
+#logo{
+margin:0 0 0 41px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav a{
+    display: flex;
+    border-top:none;
+    border-bottom:4px #F2F2F2 solid;
+    width: 100%;
+    padding: 15px;
+}
+
+nav a:active{
+ 	border-color:#0065FC;
+ 	color :#0065FC;
+ }
+
+
+/* RECHERCHE=================================================================*/ 
+#formulaire_recherche form{
+    width: 100%;
+}
+
+#barre_recherche{
+    width: 100%;
+}
+
+
+#text_bouton_recherche{
+    display: none;
+}
+
+#bouton_barre_recherche{
+    padding-inline: 18px;
+    border-radius: 15px;
+} 
+
+.loupe, .loupe::before{
+    display: contents;
+    border-radius: 25px;
+}
+
+
+.marqueur_geo{
+    aspect-ratio: 1/1;
+}
+
+.tags::before{
+transition: all 0.4s;
+}
+
+.tags:active::before{
+	right:0;
+}
+
+
+/* HEBERGEMENT=================================================================*/
+
+.reservation{
+    width: 100%;
+}
+
+
+#hebergements{
+    margin: 0;
+    background-color: white;
+}
+
+.troiscellule{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#hebergements_populaires .centrage {
+    flex-direction: column;
+  }
+
+  
+.cellule_reservation_petit a {
+    flex-direction: row;
+    align-items: unset;
+}
+
+.prix_populaire {
+    padding: 5px 0px 5px 10px;
+}
+
+.cellule_reservation_petit a img{
+	max-width: 150px;
+	aspect-ratio: 127/135;
+	object-fit: cover;
+}
+
+@media screen and (max-width:360px){
+.cellule_reservation_petit a{
+    align-items: unset;
+}
+.cellule_reservation_petit a img{
+    height: auto;
+}
+}
+
+/* ACTIVITE=================================================================*/
+
+
+
+#activites{
+    height: auto;
+}
+
+#toutes_cellules_activites{
+    flex-direction: column;
+}
+
+
+#toutes_cellules_activites > article{
+	width: auto;
+}
+
+.regroupement_activite{
+    width: 100%;
+}
+
+.cellule_activite_grand img ,.cellule_activite_large img{
+    object-fit: cover;
+    height: 190px;
+    width: 100%;
+}
+
+
+
+/* FOOTER=================================================================*/
+
+footer{
+    flex-direction: column;
+}
+
+footer div{
+    margin-bottom: 40px;
+}
